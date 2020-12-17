@@ -2,9 +2,14 @@
     @extend %section-style;
 
     &__item{
+        height: 100% !important;
         box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.1);
-        
-        
+        background-color: lavender;
+    
+        @media screen and (min-width: 768px) {
+            height: 350px;
+        }
+ 
         
     }
     &__text{
@@ -12,6 +17,7 @@
     }
     &__img-wraper{
         position: relative;
+        height: 275px;
     }
     &__svg{
         position: absolute;
@@ -21,25 +27,7 @@
         height: 12px;
         
     }
-    // &__svg-btn{
-    //     @extend %button-throw;
-    //     position: absolute;
-    //     right: 20px;
-    //     top: 20px;
-    //     width: 12px;
-    //     height: 12px;
-    //     background-color: none;
-
-    // }
-    &__svg2{
-        position: absolute;
-        right: 20px;
-        bottom: 20px;
-        width: 12px;
-        height: 12px;
-    }
-    
-    
+        
 }
 .isHidden {
     visibility: hidden;
@@ -56,6 +44,7 @@
 
 .card__img{
    @extend %img-style;
+   height: 100%;
    
    
 }
@@ -70,6 +59,7 @@
     display: flex;
     align-items: center;
     text-align: start;
+    height: 16px;
 }
 
 .card__sale{
