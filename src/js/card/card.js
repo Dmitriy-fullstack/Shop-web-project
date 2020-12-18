@@ -42,7 +42,6 @@ function onFavourite(event) {
   const favId = event.target.dataset;
   console.log(favId.id);
   onPost(favId.id);
-  
-
-  
+  event.target.classList.add('check');
+ 
 }
